@@ -3,6 +3,8 @@
  */
 package linkedLists;
 
+import java.util.*;
+
 /**
  * ReverseList.java 
  * @author Basava R.Kanaparthi(basava.08@gmail.com)
@@ -15,9 +17,10 @@ public class ReverseList {
 		NodeD curr = head;
 		NodeD temp = null;
 		NodeD next = null;
+
 		while (curr != null)
 		{
-			System.out.println(curr.data);
+//			System.out.println(curr.data);
 			temp = curr.prev;
 			next = curr.next;
 			curr.prev = curr.next;

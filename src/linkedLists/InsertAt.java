@@ -13,7 +13,7 @@ public class InsertAt {
 	 static Node InsertNth(Node head, int data, int position) {
 		   // This is a "method-only" submission. 
 		    // You only need to complete this method.
-		    Node new_node = new Node();
+		    Node new_node = new Node(data);
 		    new_node.data = data;
 		    new_node.next = null;
 		    if (head == null)
@@ -104,7 +104,3 @@ public class InsertAt {
 	    return head.data;
 	}
 }
-final class Node {
-    int data;
-    Node next;
- }
